@@ -47,17 +47,66 @@ const images2 = [
 
 
 
-  // Show the button when the user scrolls down 20px from the top
-window.onscroll = function() {
-    var backToTopButton = document.getElementById("back-to-top");
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      backToTopButton.style.display = "block";
-    } else {
-      backToTopButton.style.display = "none";
-    }
-  };
+// Function to adjust the position of the "Back to Top" button
+function adjustButtonPosition() {
+  const button = document.getElementById('back-to-top');
+  const footer = document.querySelector('footer'); // Select the footer element
+
+  const footerRect = footer.getBoundingClientRect();
+  const buttonHeight = button.offsetHeight;
+  const windowHeight = window.innerHeight;
+
+  // Calculate the distance from the bottom of the viewport to the footer
+  const distanceToFooter = windowHeight - footerRect.top;
+
+  // If the footer is visible and close to the button
+  if (distanceToFooter > buttonHeight) {
+    // Adjust button position to stay above the footer
+    button.style.bottom = (distanceToFooter + 20) + 'px';
+  } else {
+    // Reset to default position when footer is not in the way
+    button.style.bottom = '20px';
+  }
+}
+
+// Show/hide button and adjust position when scrolling
+window.onscroll = function () {
+  const button = document.getElementById('back-to-top');
+
+  if (window.scrollY > 200) { // Show button after scrolling 200px
+    button.style.display = 'block';
+  } else {
+    button.style.display = 'none';
+  }
+
+  adjustButtonPosition(); // Adjust button position on scroll
+};
+
+// Smooth scroll to top
+document.getElementById('back-to-top').onclick = function () {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+
+
+
+// //dark
+// document.addEventListener('DOMContentLoaded', () => {
+//   const options = {
+//     bottom: '32px', // Unset the bottom position
+//     right: 'unset',  // Unset the right position
+//     left: '32px',    // Set the left position to 32px
+//     top: '20px',     // Set the top position to 20px
+//     time: '0.5s',    // Animation time for the transition
+//     mixColor: '#fff', // Color used during the transition
+//     backgroundColor: '#fff',  // Background color for dark mode
+//     buttonColorDark: '#fff',  // Button color in dark mode
+//     buttonColorLight: '#fff', // Button color in light mode
+//     saveInCookies: false, // Do not save preference in cookies
+//     label: '🌓', // Button label
+//     autoMatchOsTheme: true // Match the OS theme automatically
+//   };
   
-  // Scroll to the top when the button is clicked
-  document.getElementById("back-to-top").onclick = function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+//   const darkmode = new Darkmode(options);
+//   darkmode.showWidget();
+// });

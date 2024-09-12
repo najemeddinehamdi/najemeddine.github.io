@@ -1,7 +1,6 @@
 # <a href="https://najemeddinehamdi.github.io/najemeddine.github.io/" target="_blank">My Portfolio Website</a>
 
 [![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/najemeddinehamdi/Portfolio.git)
-<!-- [![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://people.umass.edu/avsingh) -->
 [![Author](https://img.shields.io/badge/Najem%20Eddine%20Hamdi-green?style=flat&label=Author
 )](https://www.linkedin.com/in/najem-eddine-hamdi/)
 ![Latest Release](./assets/najem.png)

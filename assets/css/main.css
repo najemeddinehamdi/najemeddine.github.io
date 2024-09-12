@@ -216,10 +216,10 @@ template {
     display: none
 }
 
-/*!
+/* !
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License) */
+
 @-webkit-keyframes fa-spin {
     0% {
         -webkit-transform: rotate(0deg);
@@ -5205,10 +5205,13 @@ a img {
     border-radius: 50%; /* Rounded corners */
     cursor: pointer; /* Pointer cursor on hover */
     z-index: 1000;  /* Make sure it appears above other content */
+
   }
   
   #back-to-top:hover {
     background-color: #657b46; /* Lighter on hover */
   }
   
+
+
 
