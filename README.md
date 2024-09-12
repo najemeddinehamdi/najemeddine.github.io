@@ -2,7 +2,7 @@
 
 [![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/najemeddinehamdi/Portfolio.git)
 <!-- [![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://people.umass.edu/avsingh) -->
-[![Author](https://img.shields.io/badge/Najem%20Eddine%20Hamdi-black?style=flat&label=Author
+[![Author](https://img.shields.io/badge/Najem%20Eddine%20Hamdi-green?style=flat&label=Author
 )](https://www.linkedin.com/in/najem-eddine-hamdi/)
 ![Latest Release](./assets/najem.png)
 
