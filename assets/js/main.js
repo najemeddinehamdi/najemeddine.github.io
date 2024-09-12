@@ -43,3 +43,21 @@ const images2 = [
 
   // Set the interval for changing images every 3 seconds
   setInterval(changeImage2, 3000);
+
+
+
+
+  // Show the button when the user scrolls down 20px from the top
+window.onscroll = function() {
+    var backToTopButton = document.getElementById("back-to-top");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  };
+  
+  // Scroll to the top when the button is clicked
+  document.getElementById("back-to-top").onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };

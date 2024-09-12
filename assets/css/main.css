@@ -4846,6 +4846,9 @@ a img {
     background-attachment: fixed
 }
 
+
+
+
 #particles-js .particles-js-canvas-el {
     width: 100% !important;
     height: 100vh !important
@@ -5186,3 +5189,26 @@ a img {
     margin: 0;
     color: #fff
 }
+
+
+
+#back-to-top {
+    position: fixed; /* Fixed position */
+    bottom: 20px;    /* 20px from the bottom */
+    right: 20px;     /* 20px from the right */
+    display: none;   /* Hidden by default */
+    background-color: #3f5027; /* Dark background */
+    color: #fff;    /* White text */
+    border: none;   /* No border */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    z-index: 1000;  /* Make sure it appears above other content */
+  }
+  
+  #back-to-top:hover {
+    background-color: #657b46; /* Lighter on hover */
+  }
+  
+
