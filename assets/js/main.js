@@ -88,6 +88,23 @@ document.getElementById('back-to-top').onclick = function () {
 };
 
 
+function openDemo() {
+  document.getElementById("demoModal").style.display = "block";
+}
+
+function closeDemo() {
+  document.getElementById("demoModal").style.display = "none";
+}
+
+function openDemo1() {
+  document.getElementById("demoModal1").style.display = "block";
+}
+
+function closeDemo1() {
+  document.getElementById("demoModal1").style.display = "none";
+}
+
+
 
 
 // //dark

@@ -5212,6 +5212,63 @@ a img {
     color: white;
     background-color: #657b46; /* Lighter on hover */
   }
+
+
+
+
+
+  .demo-button {
+    background-color: #3f5027; /* Couleur bleue */
+    color: white;
+    border: none;
+    padding: 10px ;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 14px;
+    margin: 20px;
+}
+
+.demo-button:hover {
+    background-color: #657b46; /* Couleur légèrement plus foncée au survol */
+}
+
+  /* Style for the modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 12px;
+    width: 50%;
+
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
   
 
 
