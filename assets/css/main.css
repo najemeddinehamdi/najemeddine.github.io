@@ -5247,11 +5247,12 @@ a img {
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto;
+    margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
     border-radius: 12px;
-    width: 70%;
+    width: 90%;
+    max-width: 600px;
 
 }
 
@@ -5267,6 +5268,14 @@ a img {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+    .modal-content {
+        margin: 5% auto; /* Less top margin for smaller screens */
+        width: 90%; /* Full width for smaller screens */
+    }
 }
 
     /* Responsive Video Container */
