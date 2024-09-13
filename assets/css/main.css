@@ -4887,8 +4887,13 @@ a img {
     display: block;
     line-height: 1;
     color: #fff;
-    margin-top: 10px
+    margin-top: 10px;
 }
+
+/* .q{
+    font-size: 15px;
+    line-height: 1;
+} */
 
 @media only screen and (min-width:550px) {
     .header .site-description {
@@ -5142,6 +5147,28 @@ a img {
         height: 100%;
         object-fit: cover;
     }
+}
+
+#slideshow-image{
+    filter: hue-rotate(10deg) saturate(150%) brightness(0.6); /* Adjust the hue, saturation, and brightness */
+    transition: filter 0.5s ease; /* Smooth transition for filter change */
+    cursor: pointer;
+}
+/* Remove grayscale on hover */
+#slideshow-image:hover {
+    filter: grayscale(0%); /* Restores the original color */
+    cursor: pointer; /* Changes the cursor to pointer on hover */
+}
+
+#slideshow-image2{
+    filter: hue-rotate(10deg) saturate(150%) brightness(0.6); /* Adjust the hue, saturation, and brightness */
+    transition: filter 0.5s ease; /* Smooth transition for filter change */
+    cursor: pointer;
+}
+/* Remove grayscale on hover */
+#slideshow-image2:hover {
+    filter: grayscale(0%); /* Restores the original color */
+    cursor: pointer; /* Changes the cursor to pointer on hover */
 }
 
 .project-link {

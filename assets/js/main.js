@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded",function(){new SweetScroll({}),part
 
 
 const images = [
-    "./assets/img/jpg/logo.png",
+    "./assets/img/jpg/car.png",
     "./assets/img/jpg/carya.png",
     "./assets/img/jpg/carya1.png",
   ];
