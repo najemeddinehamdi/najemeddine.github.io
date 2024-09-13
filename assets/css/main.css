@@ -5150,7 +5150,7 @@ a img {
 }
 
 #slideshow-image{
-    filter: hue-rotate(10deg) saturate(150%) brightness(0.6); /* Adjust the hue, saturation, and brightness */
+    filter: hue-rotate(10deg) saturate(150%) brightness(0.7); /* Adjust the hue, saturation, and brightness */
     transition: filter 0.5s ease; /* Smooth transition for filter change */
     cursor: pointer;
 }
@@ -5161,7 +5161,7 @@ a img {
 }
 
 #slideshow-image2{
-    filter: hue-rotate(10deg) saturate(150%) brightness(0.6); /* Adjust the hue, saturation, and brightness */
+    filter: hue-rotate(10deg) saturate(150%) brightness(0.7); /* Adjust the hue, saturation, and brightness */
     transition: filter 0.5s ease; /* Smooth transition for filter change */
     cursor: pointer;
 }
