@@ -5251,7 +5251,7 @@ a img {
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
-    max-width: 600px; /* Limit the max width for larger screens */
+ /* Limit the max width for larger screens */
     position: relative; /* Ensure that close button positions correctly */
 }
 
