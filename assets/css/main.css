@@ -5151,23 +5151,25 @@ a img {
 
 #slideshow-image{
     filter: hue-rotate(10deg) saturate(150%) brightness(0.7); /* Adjust the hue, saturation, and brightness */
-    transition: filter 0.5s ease; /* Smooth transition for filter change */
+    transition: filter 0.5s ease , transform 0.5s ease; /* Smooth transition for filter change */
     cursor: pointer;
 }
 /* Remove grayscale on hover */
 #slideshow-image:hover {
     filter: grayscale(0%); /* Restores the original color */
+    transform: scale(1.05);
     cursor: pointer; /* Changes the cursor to pointer on hover */
 }
 
 #slideshow-image2{
     filter: hue-rotate(10deg) saturate(150%) brightness(0.7); /* Adjust the hue, saturation, and brightness */
-    transition: filter 0.5s ease; /* Smooth transition for filter change */
+    transition: filter 0.5s ease, transform 0.5s ease; /* Smooth transition for filter change */
     cursor: pointer;
 }
 /* Remove grayscale on hover */
 #slideshow-image2:hover {
     filter: grayscale(0%); /* Restores the original color */
+    transform: scale(1.05);
     cursor: pointer; /* Changes the cursor to pointer on hover */
 }
 
