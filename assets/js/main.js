@@ -106,6 +106,19 @@ function closeDemo1() {
 
 
 
+function showCertificate(src) {
+  const modal = document.getElementById("certificateModal");
+  const modalImage = document.getElementById("modalImage");
+  modal.style.display = "block";
+  modalImage.src = src;
+}
+
+function closeModal() {
+  const modal = document.getElementById("certificateModal");
+  modal.style.display = "none";
+}
+
+
 
 // //dark
 // document.addEventListener('DOMContentLoaded', () => {
