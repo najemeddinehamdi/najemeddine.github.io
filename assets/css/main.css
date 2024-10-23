@@ -5037,6 +5037,15 @@ a img {
     margin: 5px auto
 }
 
+
+.user-details picture img {
+    transition: all 0.9s ease; /* Smooth transition effect */
+  }
+  
+  .user-details picture img:hover {
+    content: url('/assets/img/jpg/pro-pic.jpg'); /* Change to the new image on hover */
+    transform: scale(1.1); /* Optional: Slightly scale the image for a cool effect */
+  }
 #projects {
     display: flex;
     flex-direction: column;
