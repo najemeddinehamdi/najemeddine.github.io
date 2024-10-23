@@ -5038,14 +5038,14 @@ a img {
 }
 
 
-/* .user-details picture img {
+.user-details picture img {
     transition: all 0.9s ease; 
   }
   
   .user-details picture img:hover {
     content: url('/assets/img/jpg/pro-pic.jpg');
     transform: scale(1.1); 
-  } */
+  }
 #projects {
     display: flex;
     flex-direction: column;
