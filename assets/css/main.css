@@ -5043,7 +5043,6 @@ a img {
   }
   
   .user-details picture img:hover {
-    content: url('https://media.licdn.com/dms/image/v2/D5603AQEdvHolIfEsAQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724754616042?e=1735171200&v=beta&t=Ptiqw8faa3nVNxFehYMJamuYblystmAH0UPhtiZsH-I');
     transform: scale(1.1); 
   }
 #projects {
