@@ -5043,7 +5043,7 @@ a img {
   }
   
   .user-details picture img:hover {
-    content: url('/assets/img/jpg/pro-pic.jpg');
+    content: url('/assets/img/pro-pic.jpg');
     transform: scale(1.1); 
   }
 #projects {
