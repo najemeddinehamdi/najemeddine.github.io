@@ -5044,7 +5044,7 @@ a img {
   
   .user-details picture img:hover {
     content: url('/assets/img/jpg/pro-pic.jpg'); /* Change to the new image on hover */
-    transform: scale(1.1); /* Optional: Slightly scale the image for a cool effect */
+    transform: scale(1.1); 
   }
 #projects {
     display: flex;
