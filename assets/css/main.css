@@ -5528,3 +5528,35 @@ p {
     color: #555555; /* Lighter grey for secondary text */
 }
 
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .project-slider {
+        padding: 15px; /* Reduce padding for mobile */
+        min-height: 300px; /* Adjust minimum height */
+    }
+
+    .user-projects {
+        flex-direction: column; /* Stack projects vertically on small screens */
+        align-items: center; /* Center content */
+    }
+
+    .images-left, .images-right {
+        margin-bottom: 15px; /* Add space between images and text */
+    }
+
+    .contents, .contents-right {
+        text-align: center; /* Center text for smaller screens */
+    }
+    
+    .prev, .next {
+        font-size: 24px; /* Increase arrow size for better touch targets */
+        padding: 10px; /* Adjust padding for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .prev, .next {
+        font-size: 20px; /* Further reduce arrow size if needed */
+        padding: 8px; /* Adjust padding for even smaller screens */
+    }
+}
