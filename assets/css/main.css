@@ -5558,7 +5558,7 @@ p {
 @media (max-width: 480px) {
     .prev, .next {
         font-size: 25px; /* Further reduce arrow size if needed */
-        padding: 0px 23px; /* Adjust padding for even smalle
+        padding: 0px 23px; 
     }
 }
 
