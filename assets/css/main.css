@@ -5034,7 +5034,7 @@ a img {
 
 .user-details {
     text-align: center;
-    margin: 5px auto
+    margin: 5px auto;
 }
 
 
@@ -5046,12 +5046,16 @@ a img {
     transform: scale(1.1); 
   }
 #projects {
+    position: relative;
+    padding: 20px 20px 70px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     width: 90%;
     max-width: 960px;
-    margin: 0 auto
+    margin: 0 auto;
+
 }
 
 @media only screen and (min-width:550px) {
@@ -5096,12 +5100,12 @@ a img {
 
     .contents-right,
     .images-right {
-        float: right;
+ 
         width: 48%
     }
 
     .images-right img {
-        float: right;
+
         @media only screen and (min-width:550px) {
     .contents {
         margin-left: 0;
@@ -5158,7 +5162,7 @@ a img {
 }
 
 #slideshow-image{
-    filter: hue-rotate(10deg) saturate(150%) brightness(0.7); /* Adjust the hue, saturation, and brightness */
+
     transition: filter 0.5s ease , transform 0.5s ease; /* Smooth transition for filter change */
     cursor: pointer;
 }
@@ -5169,7 +5173,7 @@ a img {
     cursor: pointer; /* Changes the cursor to pointer on hover */
 }
 #slide{
-    filter: hue-rotate(10deg) saturate(150%) brightness(0.7); /* Adjust the hue, saturation, and brightness */
+
     transition: filter 0.5s ease , transform 0.5s ease; /* Smooth transition for filter change */
     cursor: pointer;
 }
@@ -5180,7 +5184,7 @@ a img {
     cursor: pointer; /* Changes the cursor to pointer on hover */
 }
 #slideshow-image2{
-    filter: hue-rotate(10deg) saturate(150%) brightness(0.7); /* Adjust the hue, saturation, and brightness */
+  /* Adjust the hue, saturation, and brightness */
     transition: filter 0.5s ease, transform 0.5s ease; /* Smooth transition for filter change */
     cursor: pointer;
 }
@@ -5455,3 +5459,72 @@ a img {
 .certificate-card:hover .certificate-description {
     display: block; /* Show on hover */
 }
+
+
+
+.project-slider {
+    position: relative;
+    max-width: 950px; /* Wider for a more spacious layout */
+    margin: auto;
+    overflow: hidden; /* Hides overflow content */
+    padding: 30px; /* Increase padding for more spacing */
+    background-color: #f2f2f2; /* Very light grey background for the slider */
+    border-radius: 12px; /* Slightly rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* More pronounced shadow for depth */
+   display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    min-height: 400px; /* Minimum height */
+}
+
+.user-projects {
+    display: none; /* Hide all projects by default */
+    border-radius: 10px; /* Rounded corners for each project */
+    overflow: hidden; /* Prevent overflow */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+    opacity: 0; /* Start with invisible */
+}
+
+.user-projects.active {
+    display: flex; /* Show the active project */
+    opacity: 1; /* Fully visible when active */
+}
+.prev, .next {
+
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(50%); /* Adjust for perfect centering */
+    font-size: 30px; /* Adjust size for the arrows */
+    color: #3f5027; /* Set color for the arrows */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    z-index: 0; /* Ensure arrows are above other content */
+}
+
+
+.prev {
+    left: -50px; /* Adjust distance from the left */
+}
+
+.next {
+    right: -50px; /* Adjust distance from the right */
+}
+
+.contents, .contents-right {
+    text-align: center;
+    padding: 20px; /* Add padding for spacing */
+    color: #333333; /* Dark charcoal text for better contrast */
+}
+
+h3 {
+    font-size: 22px; /* Slightly larger title size for emphasis */
+    margin: 15px 0; /* Space around titles */
+    font-weight: 600; /* Semi-bold for emphasis */
+}
+
+p {
+    line-height: 1.6; /* Improve readability */
+    font-size: 15px; /* Standard paragraph size */
+    color: #555555; /* Lighter grey for secondary text */
+}
+

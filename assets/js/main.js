@@ -140,3 +140,24 @@ function closeModal() {
 //   const darkmode = new Darkmode(options);
 //   darkmode.showWidget();
 // });
+
+
+let slideIndex = 0;
+showSlide(slideIndex); // Show the first project
+
+function moveSlide(n) {
+    showSlide(slideIndex += n);
+}
+
+function showSlide(n) {
+    const slides = document.querySelectorAll('.user-projects');
+    if (n >= slides.length) {
+        slideIndex = 0; // Loop back to the first slide
+    } else if (n < 0) {
+        slideIndex = slides.length - 1; // Go to the last slide
+    }
+    slides.forEach((slide, index) => {
+        slide.classList.remove('active'); // Hide all slides
+    });
+    slides[slideIndex].classList.add('active'); // Show the current slide
+}
