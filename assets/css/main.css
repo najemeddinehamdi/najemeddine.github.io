@@ -5499,15 +5499,16 @@ a img {
     color: #3f5027; /* Set color for the arrows */
     cursor: pointer; /* Change cursor to pointer on hover */
     z-index: 0; /* Ensure arrows are above other content */
+    padding: 0; /* No padding */
 }
 
 
 .prev {
-    left: -50px; 
+    left: -10px; 
 }
 
 .next {
-    right: -50px; /* Adjust distance from the right */
+    right: -10px; /* Adjust distance from the right */
 }
 
 .contents, .contents-right {
@@ -5556,7 +5557,7 @@ p {
 
 @media (max-width: 480px) {
     .prev, .next {
-        font-size: 20px; /* Further reduce arrow size if needed */
-        padding: 8px; /* Adjust padding for even smaller screens */
+        font-size: 25px; /* Further reduce arrow size if needed */
+        padding: 0px 23px; /* Adjust padding for even smaller screens */
     }
 }
