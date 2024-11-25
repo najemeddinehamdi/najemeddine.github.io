@@ -5349,6 +5349,7 @@ a img {
 .certificates-section {
     padding: 50px 0;
     background-color: #f8f8f8;
+    
   }
   
   .section-title {
@@ -5464,6 +5465,7 @@ a img {
 
 .project-slider {
     position: relative;
+    transition: transform 0.9s ease; /* Smooth transition for slider */
     max-width: 950px; /* Wider for a more spacious layout */
     margin: auto;
     overflow: hidden; /* Hides overflow content */
@@ -5479,11 +5481,15 @@ a img {
 }
 
 .user-projects {
-    display: none; /* Hide all projects by default */
-    border-radius: 10px; /* Rounded corners for each project */
-    overflow: hidden; /* Prevent overflow */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
-    opacity: 0; /* Start with invisible */
+    display: none; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    transition: transform 0.001s ease, opacity 0.3s ease; 
+    opacity: 0; 
+    box-sizing: border-box; 
+    min-width: 100%; 
+    top:0;
+    left:0;
 }
 
 .user-projects.active {

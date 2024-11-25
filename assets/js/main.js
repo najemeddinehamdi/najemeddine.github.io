@@ -142,8 +142,28 @@ function closeModal() {
 // });
 
 
+// let slideIndex = 0;
+// showSlide(slideIndex); // Show the first project
+
+// function moveSlide(n) {
+//     showSlide(slideIndex += n);
+// }
+
+// function showSlide(n) {
+//     const slides = document.querySelectorAll('.user-projects');
+//     if (n >= slides.length) {
+//         slideIndex = 0; // Loop back to the first slide
+//     } else if (n < 0) {
+//         slideIndex = slides.length - 1; // Go to the last slide
+//     }
+//     slides.forEach((slide, index) => {
+//         slide.classList.remove('active'); // Hide all slides
+//     });
+//     slides[slideIndex].classList.add('active'); // Show the current slide
+
+// }
 let slideIndex = 0;
-showSlide(slideIndex); // Show the first project
+showSlide(slideIndex); // Show the first project on load
 
 function moveSlide(n) {
     showSlide(slideIndex += n);
@@ -151,13 +171,37 @@ function moveSlide(n) {
 
 function showSlide(n) {
     const slides = document.querySelectorAll('.user-projects');
+    
+    // Loop around if out of bounds
     if (n >= slides.length) {
-        slideIndex = 0; // Loop back to the first slide
+        slideIndex = 0; 
     } else if (n < 0) {
-        slideIndex = slides.length - 1; // Go to the last slide
+        slideIndex = slides.length - 1;
     }
-    slides.forEach((slide, index) => {
-        slide.classList.remove('active'); // Hide all slides
-    });
-    slides[slideIndex].classList.add('active'); // Show the current slide
+
+    // Hide all slides and remove active class
+    slides.forEach(slide => slide.classList.remove('active'));
+
+    // Show the current slide with active class
+    slides[slideIndex].classList.add('active');
 }
+
+
+
+// function moveSlide(direction) {
+//     const slides = document.querySelectorAll('.user-projects');
+//     const totalSlides = slides.length;
+
+//     // Update the current index
+//     currentIndex += direction;
+
+//     // Loop back to the beginning/end if we go out of bounds
+//     if (currentIndex < 0) {
+//         currentIndex = totalSlides - 1;
+//     } else if (currentIndex >= totalSlides) {
+//         currentIndex = 0;
+//     }
+
+//     // Update the transform property for smooth sliding
+//     document.querySelector('.project-slider').style.transform = `translateX(-${currentIndex * 100}%)`;
+// }
