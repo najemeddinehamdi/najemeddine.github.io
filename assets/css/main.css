@@ -5349,7 +5349,7 @@ a img {
 .certificates-section {
     padding: 50px 0;
     background-color: #f8f8f8;
-    
+
   }
   
   .section-title {
@@ -5568,4 +5568,102 @@ p {
     }
 }
 
+.contact-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Keep it consistent */
+    z-index: 1000;
+}
 
+.btn-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #3f5027; /* Button background color */
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.btn-circle:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-modal {
+    position: absolute;
+    bottom: 80px; /* Position above the button */
+    left: -10px; /* Consistent alignment */
+    background-color: #f9f9f9; /* Light background */
+    color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: none; /* Hidden by default */
+    white-space: nowrap;
+    max-width: 300px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    opacity: 0; /* Initial state for animation */
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth show/hide animation */
+    overflow-wrap: break-word; /* Break long words if needed */
+    word-wrap: break-word; /* Ensures word breaks */
+    word-break: break-word; /* Forces words to break if too long */
+    overflow: hidden; /* Prevent content from overflowing */
+
+
+}
+
+.contact-modal.show {
+    display: block; /* Display modal when 'show' class is added */
+    opacity: 1; /* Fade-in effect */
+    transform: translateY(0);
+}
+
+/* Style for headings in the modal */
+.contact-modal h3 {
+    font-size: 16px;
+    margin: 10px 0 5px; /* Adds spacing between items */
+}
+
+/* Style for anchor tags */
+.contact-modal a {
+    color: #0078d7; /* Blue link */
+    text-decoration: none;
+    font-size: 14px;
+    display: block; /* Ensures each link is on a new line */
+    font-weight: bold;
+    margin-bottom: 5px; /* Spacing between links */
+}
+
+.contact-modal a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+    color: #0056b3; /* Darker blue for hover effect */
+}
+
+/* Style for paragraphs */
+.contact-modal p {
+    margin: 0 0 10px; /* Add spacing below the paragraph */
+    font-size: 14px;
+    line-height: 1.6; /* Better readability */
+    color: #555; /* Slightly muted text color */
+    word-wrap: break-word; /* Ensure long words break properly */
+    word-break: break-word; /* Additional word break rule */
+    text-align: justify; /* Optional: Aligns text neatly */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .contact-modal {
+        bottom: 100px;
+        left: 5px; /* Adjust for smaller screens */
+        max-width: 90%;
+        padding: 10px;
+    }
+}

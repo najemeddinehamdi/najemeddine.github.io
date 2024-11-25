@@ -51,10 +51,14 @@ const images2 = [
 function adjustButtonPosition() {
   const button = document.getElementById('back-to-top');
   const footer = document.querySelector('footer'); // Select the footer element
+  const contactButton = document.querySelector('.contact-button'); // Select your contact button
+
 
   const footerRect = footer.getBoundingClientRect();
   const buttonHeight = button.offsetHeight;
   const windowHeight = window.innerHeight;
+  const contactButtonHeight = contactButton.offsetHeight;
+
 
   // Calculate the distance from the bottom of the viewport to the footer
   const distanceToFooter = windowHeight - footerRect.top;
@@ -67,6 +71,12 @@ function adjustButtonPosition() {
     // Reset to default position when footer is not in the way
     button.style.bottom = '20px';
   }
+    // Adjust "Contact" button position
+    if (distanceToFooter > contactButtonHeight) {
+      contactButton.style.bottom = (distanceToFooter + 20) + 'px';
+    } else {
+      contactButton.style.bottom = '20px';
+    }
 }
 
 // Show/hide button and adjust position when scrolling
@@ -186,6 +196,14 @@ function showSlide(n) {
     slides[slideIndex].classList.add('active');
 }
 
+
+// JavaScript to toggle modal visibility
+const contactBtn = document.getElementById('contactBtn');
+const contactModal = document.getElementById('contactModal');
+
+contactBtn.addEventListener('click', () => {
+    contactModal.classList.toggle('show');
+});
 
 
 // function moveSlide(direction) {
