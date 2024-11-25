@@ -5248,9 +5248,9 @@ a img {
     bottom: 20px;    /* 20px from the bottom */
     right: 20px;     /* 20px from the right */
     display: none;   /* Hidden by default */
-    background-color: #3f5027; /* Dark background */
-    color: #fff;    /* White text */
-    border: none;   /* No border */
+    color: #3f5027;   
+    border: #3f5027 solid 1px;   /* No border */
+    background-color: white;
     width: 50px;
     height: 50px;
     border-radius: 50%; /* Rounded corners */
@@ -5259,11 +5259,7 @@ a img {
 
   }
   
-  #back-to-top:hover {
-    color: white;
-    background-color: #657b46; /* Lighter on hover */
-  }
-
+ 
 
 
 
@@ -5575,19 +5571,26 @@ p {
     z-index: 1000;
 }
 
+.contact-button.hidden {
+    opacity: 0;
+    pointer-events: none; /* Prevent interactions when hidden */
+}
+
 .btn-circle {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 60px;
     height: 60px;
-    background-color: #3f5027; /* Button background color */
-    color: white;
+    /* background-color: #3f5027;  */
+    color: #3f5027;
     font-size: 24px;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: #3f5027 1px solid;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+
 }
 
 .btn-circle:hover {

@@ -79,6 +79,40 @@ function adjustButtonPosition() {
     }
 }
 
+// Show/hide contact button and adjust position when scrolling
+window.onscroll = function () {
+  const contactButton = document.getElementById('contactButton');
+
+  if (window.scrollY > 200) {
+      contactButton.style.display = 'block'; // Show button after scrolling 200px
+  } else {
+      contactButton.style.display = 'none'; // Hide button near the top
+  }
+
+  adjustContactButtonPosition(); // Adjust button position to avoid footer overlap
+};
+
+// Adjust the position of the contact button to avoid overlapping with the footer
+function adjustContactButtonPosition() {
+  const contactButton = document.getElementById('contactButton');
+  const footer = document.querySelector('footer');
+
+  const footerRect = footer.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+  const buttonHeight = contactButton.offsetHeight;
+
+  // Check if footer is visible in the viewport
+  if (footerRect.top < windowHeight && footerRect.top > 0) {
+      // Adjust button position to stay above the footer
+      const distanceToFooter = windowHeight - footerRect.top;
+      contactButton.style.bottom = (distanceToFooter + 20) + 'px';
+  } else {
+      // Reset to default position
+      contactButton.style.bottom = '20px';
+  }
+}
+
+
 // Show/hide button and adjust position when scrolling
 window.onscroll = function () {
   const button = document.getElementById('back-to-top');
@@ -91,6 +125,22 @@ window.onscroll = function () {
 
   adjustButtonPosition(); // Adjust button position on scroll
 };
+
+
+
+
+document.addEventListener("scroll", function () {
+  const contactButton = document.getElementById("contactButton");
+  const scrollPosition = window.scrollY;
+
+  // Show the button when scrolling down, hide it when near the top
+  if (scrollPosition > 200) {
+      contactButton.classList.remove("hidden"); // Show button
+  } else {
+      contactButton.classList.add("hidden"); // Hide button
+  }
+});
+
 
 // Smooth scroll to top
 document.getElementById('back-to-top').onclick = function () {
